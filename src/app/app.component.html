@@ -1,0 +1,64 @@
+<!-- Property binding -->
+
+<input type="text" [value]="clientName" />
+
+<!-- style binding -->
+
+<p [style.color]="myColor">Sample Text</p>
+
+<p [class]="appliedCSSClass">This line applied the *myClass* propery</p>
+
+<p [class.blue]="notAppliedCSSClass">While this line does not.</p>
+
+<!-- Two way data binding -->
+
+<input [(ngModel)]="myName" placeholder="Enter your name" />
+<p>Hello, {{ myName }}</p>
+
+<!-- Event binding example -->
+<button (click)="onButtonClick()">Click Me!</button>
+<p>{{ message }}</p>
+<br />
+
+<!-- Two way data binding -->
+<div>
+  <input [(ngModel)]="num1" type="number" placeholder="Enter a number" />
+  <input [(ngModel)]="num2" type="number" placeholder="Enter second number" />
+  <button (click)="calculateSum()">Calculate Sum</button>
+  <p>Sum: {{ result }}</p>
+</div>
+
+
+<input [(ngModel)]="myName" placeholder="Enter your name" />
+<p>Hello, {{ myName }}!</p>
+
+<!-- Directives *ngIf, *ngFor, *ngSwitch, *ngStyle, *ngClass -->
+
+<ng-template [ngIf]="showElement">
+  <p>This is the element.</p>
+</ng-template>
+
+<ul>
+  <li *ngFor="let item of num">
+    {{ item }} </li>
+</ul>
+
+<table>
+  <tr *ngFor="let item of items2">
+    <td>{{item.name}}</td>
+    <td>{{item.city}}</td>
+    <td>{{item.school}}</td>
+</table>
+
+<!-- ngSwitch Demo -->
+
+<ng-container [ngSwitch]="selectedOption">
+  <p *ngSwitchCase="1">Option 1 is selected</p>
+  <p *ngSwitchCase="2">Option 2 is selected</p>
+  <p *ngSwitchDefault>No Option Selected</p>
+
+
+
+<app-about></app-about>
+
+<app-education></app-education>
