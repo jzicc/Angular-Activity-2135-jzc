@@ -9,9 +9,9 @@ export class AppComponent {
   clientName: string = 'Procopio';
 
   //style binding
-  appliedCSSClass = 'green';
+  appliedCSSClass = 'blue';
   notAppliedCSSClass = true;
-  myColor = 'red';
+  myColor = 'blue';
 
   //Two-way data binding
   myName = '';
@@ -36,12 +36,11 @@ export class AppComponent {
 
   //ngFor
 
-  num = ['Item 1', 'Item 2', 'Item 3'];
+  num = ['Item 1'];
 
   items2 = [
-    { name: 'Joseph', city: 'Angeles', school: 'HAU' },
-    { name: 'Noie', city: 'Candaba', school: 'Harvard' },
-    { name: 'Jed', city: 'Mawaque', school: 'AUP' },
+    { name: 'Zac', city: 'Balibago', school: 'HAU' },
+    
   ];
 
   //ngSwitch
